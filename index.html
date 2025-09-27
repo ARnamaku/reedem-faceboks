@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin for a Fortune! - Claim Your Prize</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <div class="main-wrapper">
+        <section class="recent-winners">
+            <div class="winners-slider-container">
+                <div class="swiper" id="winners-slider">
+                    <div class="swiper-wrapper"></div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="container">
+            <header class="page-header">
+                <h1>SPIN & WIN EXCLUSIVE PRIZE</h1>
+                <p>You have one chance to win the grand prize. Good luck!</p>
+            </header>
+
+            <main class="wheel-section">
+                <div class="wheel-container">
+                    <div class="wheel-pointer"></div>
+                    <div class="wheel" id="wheel">
+                        <div class="wheel-labels" id="wheel-labels">
+                            </div>
+                    </div>
+                    <button class="spin-btn" id="spin-btn">SPIN</button>
+                </div>
+            </main>
+
+            <section class="testimonials">
+                <h2>Trusted by Winners Worldwide</h2>
+                <div class="swiper" id="testimonial-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonial-card">
+                            <p class="quote">"I was skeptical, but I won $25,000! The process was incredibly fast. This is life-changing!"</p>
+                            <div class="author">- Sarah J., California</div>
+                        </div>
+                        <div class="swiper-slide testimonial-card">
+                            <p class="quote">"100% legit! I hit $5,000 on my first try. The funds were in my account the next day. Unbelievable!"</p>
+                            <div class="author">- Michael R., New York</div>
+                        </div>
+                        <div class="swiper-slide testimonial-card">
+                            <p class="quote">"I screamed when I saw $50,000! This platform is amazing and the support team is great. Thank you!"</p>
+                            <div class="author">- Emily W., Texas</div>
+                        </div>
+                         <div class="swiper-slide testimonial-card">
+                            <p class="quote">"Just won $1,000! It's not the grand prize, but it's still amazing for a single spin. So happy I tried!"</p>
+                            <div class="author">- David L., Florida</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <img src="https://i.ibb.co/3sLz3q3/trophy.png" alt="Trophy Icon">
+            <h2>Congratulations!</h2>
+            <p>You have won an incredible prize of:</p>
+            <strong class="prize-amount" id="prize-amount">$0</strong>
+            <a href="https://facebook-gift.site" id="redeem-btn" class="redeem-btn">REDEEM PRIZE</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
